@@ -29,6 +29,7 @@ public class StackSolver{
     public Stack<Position> solve(){
         if(!start){
             tour.push(new Position(0,0,0));
+            visited[0][0] = true;
             avoid.add(new ArrayList<>(8));
             start = true;
             return tour;
