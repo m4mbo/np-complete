@@ -9,10 +9,10 @@ public class Frame extends JFrame{
 
     public Frame(){
 
-        board = new Board(8);
+        board = new Board(5);
 
         setSize(FRAME_WIDTH, FRAME_HEIGHT);				//setting the frame to the constant values declared as properties
-		setTitle("N Queens");						    // setting a title to the frame
+		setTitle("Knight's Tour");						    // setting a title to the frame
 		setLocationRelativeTo(null);					//setting frame location to the middle of the screen
 	
 		add(board);										// adding a panel
