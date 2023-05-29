@@ -9,4 +9,5 @@ The basic idea behind Warnsdorff's rule is to prioritize the knight's moves base
 
 After comparing the solution applying Warnsdorff's rule optimization and not applying it, one can clearly observe how this rule makes the tour come to an end much faster. The visualization is great for having a better understanding of how backtracking works, which can result particularly useful when teaching about the stack ADT.
 
+The space complexity for this solutions is in O(N^2), as a boolean type NxN matrix was created to hold visited tiles, and an adjacency list was implemented to map each move with the needed to avoid tiles in order to prevent repeating moves that will make the tour finish in a dead end.
 
