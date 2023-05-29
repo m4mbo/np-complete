@@ -96,12 +96,12 @@ public class Board extends JPanel implements ActionListener{
 		
 		tour = solver.solve();
 
-        Position lastPos = tour.peek();
+        	Position lastPos = tour.peek();
 
-        knight.row = lastPos.row;
-        knight.col = lastPos.col;
-        knight.x = knight.row * TILE_SIZE;
-        knight.y = knight.col * TILE_SIZE;
+        	knight.row = lastPos.row;
+        	knight.col = lastPos.col;
+        	knight.x = knight.row * TILE_SIZE;
+        	knight.y = knight.col * TILE_SIZE;
 
 		repaint();
 	}
