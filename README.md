@@ -14,10 +14,12 @@ After comparing the solution applying Warnsdorff's rule optimization and not app
 
 The space complexity for this solutions is in O(N^2), as a boolean type NxN matrix was created to hold visited tiles, and an adjacency list was implemented to map each move with the needed to avoid tiles in order to prevent repeating moves that will make the tour finish in a dead end.
 
-N=8 :
+N = 8 :
+
 ![ezgif-5-1a9c5ce78c](https://github.com/M4mbo/Knight-Tour-Problem-Java/assets/115642529/fdd3bbb0-6f42-43a4-8b36-1dcdad935810)
 
-N=20 :
+N = 20 :
+
 ![ezgif-5-1daced8716](https://github.com/M4mbo/Knight-Tour-Problem-Java/assets/115642529/b25c91f9-c5a3-4c21-bb9e-f05ae2bc818a)
 
 # N Queens
