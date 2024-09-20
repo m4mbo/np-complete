@@ -41,3 +41,7 @@ N = 20
 ![256667305-a0136499-0208-46cd-8d36-3020735f43d9](https://github.com/m4mbo/np-complete/assets/115642529/83ad62ac-a2cb-4977-8b75-dc6a27ca3704)
 
 
+## Credits
+
+* [m4mbo](https://github.com/m4mbo) - Code.
+* [DaGeRe](https://github.com/DaGeRe) - Theory.
