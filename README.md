@@ -14,16 +14,11 @@ After comparing the solution applying Warnsdorff's rule optimization and not app
 
 The space complexity for this solutions is in O(N^2), as a boolean type NxN matrix was created to hold visited tiles, and an adjacency list was implemented to map each move with the needed to avoid tiles in order to prevent repeating moves that will make the tour finish in a dead end.
 
-N = 8 :
-
 <div align="center">
   <img src="Images/knights8.gif" alt="demo" width="300"/>
-</div>
-
-N = 20 :
-
-<div align="center">
+  <p><em>N = 8.</em></p>
   <img src="Images/knights20.gif" alt="demo" width="300"/>
+  <p><em>N = 20.</em></p>
 </div>
 
 # N Queens
@@ -36,16 +31,11 @@ The problem is solved in a non-deterministic manner, because it is NP-complete. 
 
 ## Results
 
-N = 8
-
 <div align="center">
   <img src="Images/queens8.gif" alt="demo" width="300"/>
-</div>
-
-N = 20
-
-<div align="center">
+  <p><em>N = 8.</em></p>
   <img src="Images/queens20.gif" alt="demo" width="300"/>
+  <p><em>N = 20.</em></p>
 </div>
 
 ## Credits
