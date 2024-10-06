@@ -16,11 +16,15 @@ The space complexity for this solutions is in O(N^2), as a boolean type NxN matr
 
 N = 8 :
 
-![ezgif-5-1a9c5ce78c](https://github.com/M4mbo/Knight-Tour-Problem-Java/assets/115642529/fdd3bbb0-6f42-43a4-8b36-1dcdad935810)
+<div align="center">
+  <img src="Images/knights8.gif" alt="demo" width="300"/>
+</div>
 
 N = 20 :
 
-![ezgif-5-1daced8716](https://github.com/M4mbo/Knight-Tour-Problem-Java/assets/115642529/b25c91f9-c5a3-4c21-bb9e-f05ae2bc818a)
+<div align="center">
+  <img src="Images/knights20.gif" alt="demo" width="300"/>
+</div>
 
 # N Queens
 
@@ -34,12 +38,15 @@ The problem is solved in a non-deterministic manner, because it is NP-complete. 
 
 N = 8
 
-![256667242-cd57e1b8-6cd8-47ed-a078-db1e75f68f0e](https://github.com/m4mbo/np-complete/assets/115642529/160e09ed-12db-4afc-b33a-abc9573f34ba)
+<div align="center">
+  <img src="Images/queens8.gif" alt="demo" width="300"/>
+</div>
 
 N = 20
 
-![256667305-a0136499-0208-46cd-8d36-3020735f43d9](https://github.com/m4mbo/np-complete/assets/115642529/83ad62ac-a2cb-4977-8b75-dc6a27ca3704)
-
+<div align="center">
+  <img src="Images/queens20.gif" alt="demo" width="300"/>
+</div>
 
 ## Credits
 
