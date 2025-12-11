@@ -1,44 +1,42 @@
-# Knight's Tour Problem 
+# Knight's Tour Problem
 
-The Knight's Tour problem consists of an NxN chess board and a knight piece. The goal is to find a sequence of knight moves that visits each tile on the board exactly once. 
+The Knight's Tour problem consists of an *N × N* chessboard and a knight piece. The goal is to find a sequence of knight moves that visits every tile on the board **exactly once**.
 
 ## Warnsdorff's Rule
 
-Warnsdorff's rule is a heuristic or a strategy that can be used in conjunction with backtracking to solve the Knight's Tour problem more efficiently. It is named after H.C. Warnsdorff, who introduced the rule in the 19th century.
+Warnsdorff's rule is a heuristic used to improve the efficiency of backtracking solutions to the Knight's Tour problem. It is named after H. C. Warnsdorff, who introduced the rule in the 19th century.
 
-The basic idea behind Warnsdorff's rule is to prioritize the knight's moves based on the number of future moves available from each potential move. The rule suggests that the knight should always move to the square with the fewest possible onward moves.
+The idea behind the rule is to prioritize moves based on the number of onward moves available from each potential next square. In other words, the knight should always move to the square from which it has the **fewest onward moves**, reducing the chances of reaching a dead end later.
 
 ## Results
 
-After comparing the solution applying Warnsdorff's rule optimization and not applying it, one can clearly observe how this rule makes the tour come to an end much faster. The visualization is great for having a better understanding of how backtracking works, which can result particularly useful when teaching about the stack ADT.
+Comparing the solution with and without Warnsdorff's optimization clearly shows how this heuristic allows the tour to complete much faster. The visualization also provides a helpful way to understand how backtracking works, which is particularly useful when teaching the stack ADT.
 
-The space complexity for this solutions is in O(N^2), as a boolean type NxN matrix was created to hold visited tiles, and an adjacency list was implemented to map each move with the needed to avoid tiles in order to prevent repeating moves that will make the tour finish in a dead end.
+The space complexity of this solution is **O(N²)**, as it uses an *N × N* boolean matrix to track visited tiles and an adjacency list to map each move to the tiles it must avoid to prevent revisiting or reaching dead ends.
 
 <div align="center">
   <img src="Images/knights8.gif" alt="demo" width="300"/>
-  <p><em>N = 8.</em></p>
   <img src="Images/knights20.gif" alt="demo" width="300"/>
-  <p><em>N = 20.</em></p>
 </div>
 
 # N Queens
 
-The N Queens problem is an extension of the famous 8 Queens problem. A solution for this problem requires to place N queens on an NxN chessboard without any two queens attacking each other. This program in particular gives an iterative solution to said problem by using the stack ADT.
+The N Queens problem generalizes the classic 8 Queens puzzle. A solution requires placing **N queens on an *N × N* chessboard** such that no two queens attack each other. This program provides an iterative solution to the problem using the stack ADT.
 
 ## Approach
 
-The problem is solved in a non-deterministic manner, because it is NP-complete. This is done by "guessing" possible Queen configurations and only advancing if there are available Queen position on the next column. A boolean type matrix(NxN) was created to hold the validity of previous attempts. Furthermore, a "Queen" type stack ADT was implemented (each layer would have its own row and column). The program will continue pushing new Queens into the stack until it didn't have any tiles per column left. After we reach this state, we pop the last added Queen (column i) and mark the matrix cell as false, making every other cell marked as false from column i+1 true (because these values can change if we create a new Queen in position i). Then we repeat the process until we reach the desired output. The space complexity of this solution is in O(N^2).
+The problem is solved in a non-deterministic manner due to its NP-complete nature. The algorithm “guesses” possible queen placements and only advances when valid positions are available in the next column.
+
+A boolean *N × N* matrix is used to store the validity of previous attempts. A custom stack ADT, where each element represents a queen with its row and column, is used to track the current configuration. The program continues pushing queens onto the stack until a column has no remaining valid tiles. When this occurs, the most recently placed queen (in column *i*) is popped, its position is marked invalid in the matrix, and all tiles in columns *i + 1* and beyond are reset to valid (since new placements in earlier columns may change future possibilities). The process continues until a full valid configuration is found. The space complexity of this solution is **O(N²)**.
 
 ## Results
 
 <div align="center">
   <img src="Images/queens8.gif" alt="demo" width="300"/>
-  <p><em>N = 8.</em></p>
   <img src="Images/queens20.gif" alt="demo" width="300"/>
-  <p><em>N = 20.</em></p>
 </div>
 
 ## Credits
 
-* [mbaranr](https://github.com/mbaranr) - Code.
-* [DaGeRe](https://github.com/DaGeRe) - Theory.
+* [mbaranr](https://github.com/mbaranr) – Code  
+* [DaGeRe](https://github.com/DaGeRe) – Theory
